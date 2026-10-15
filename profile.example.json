@@ -1,0 +1,15 @@
+{
+  "org": "Acme Studio",
+  "orgDescription": "a venture studio",
+  "product": "Acme Insights",
+  "productAliases": ["Acme", "the platform", "the tool", "the dashboard"],
+  "productDescription": "Acme Insights records customer-discovery and sales calls, transcribes them, coaches the interviewer per call, extracts insights and cross-call signals with evidence grades, and offers a chat over all calls.",
+  "callTypes": "The organisation's calls include weekly check-ins with founders who USE the product, founder recruitment interviews, prospects (studios, funds, corporate innovation teams that might BUY it), existing clients, partners and internal team meetings.",
+  "teamNames": ["Alex", "Sam"],
+  "teamEmailDomain": "@acme.example",
+  "ventureId": "acme",
+  "appUrl": "https://app.acme.example",
+  "dbRef": "",
+  "brand": "Acme Insights",
+  "dashboardTitle": "What people say about Acme Insights"
+}

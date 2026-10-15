@@ -1,0 +1,35 @@
+{
+  "name": "call-feedback-loop",
+  "private": true,
+  "type": "module",
+  "description": "Turns recorded customer calls into a quote-backed, ML-clustered product feedback dashboard. SELECT-only on your database; every quote verified against its transcript.",
+  "scripts": {
+    "pull": "tsx src/pull.ts",
+    "screen": "tsx src/screen.ts",
+    "extract": "tsx src/extract.ts",
+    "themes": "tsx src/themes.ts",
+    "build": "tsx src/build.ts",
+    "loop": "tsx src/pull.ts && tsx src/screen.ts && tsx src/fetch.ts && tsx src/dedupe.ts && tsx src/extract.ts && tsx src/themes.ts && tsx src/map.ts && tsx src/build.ts",
+    "typecheck": "tsc --noEmit",
+    "check:make": "tsx src/check.ts make",
+    "check:score": "tsx src/check.ts score",
+    "dedupe": "tsx src/dedupe.ts",
+    "map": "tsx src/map.ts",
+    "demo": "tsx scripts/demo.ts && PROFILE_FILE=profile.example.json DATA_DIR=demo-data DIST_DIR=dist/demo tsx src/build.ts",
+    "screenshots": "tsx scripts/screenshots.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.115.0",
+    "@google/genai": "^1.52.0",
+    "openai": "^5.23.2",
+    "pg": "8.22.0",
+    "umap-js": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.0.0",
+    "@types/pg": "8.15.4",
+    "puppeteer-core": "^24.10.2",
+    "tsx": "4.20.3",
+    "typescript": "5.9.2"
+  }
+}
