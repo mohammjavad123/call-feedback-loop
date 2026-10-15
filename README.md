@@ -11,6 +11,7 @@ The themes are found by machine learning, not guessed by a prompt.
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-0c0d12?style=flat-square&labelColor=181922&color=00eaff)
 ![Database](https://img.shields.io/badge/database-SELECT--only-0c0d12?style=flat-square&labelColor=181922&color=ffb347)
 ![Output](https://img.shields.io/badge/output-one%20HTML%20file-0c0d12?style=flat-square&labelColor=181922&color=d080ff)
+![License](https://img.shields.io/badge/license-MIT-0c0d12?style=flat-square&labelColor=181922&color=ff3d9e)
 
 <img src="docs/hero.png" alt="Dashboard overview" width="100%">
 
@@ -162,3 +163,7 @@ Read-only is enforced per *transaction*, never per session — a session-level s
 | LLM timeout | `LLM_TIMEOUT_MS` env | 240 000 |
 | Re-read all calls after a prompt change | bump `PROMPT_VERSION` in `src/extract.ts` | — |
 | Other data / output folders | `DATA_DIR`, `DIST_DIR` env | `data/`, `dist/` |
+
+## License
+
+[MIT](LICENSE)
